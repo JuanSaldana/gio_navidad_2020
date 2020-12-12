@@ -1,0 +1,77 @@
+main {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 1000px;
+}
+
+header {
+  background-color: green;
+  width: 100%;
+}
+
+h1 {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 2.4em;
+}
+
+.mode-edit,
+.mode-show,
+.mode-blockly {
+  display: none;
+}
+
+[mode="show"] .mode-show,
+[mode="edit"] .mode-edit,
+[mode="blockly"] .mode-blockly {
+  display: block;
+}
+
+[mode="blockly"] .blockly-editor {
+  left: 0;
+}
+
+.show {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 800px;
+  width: 800px;
+}
+
+.show > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockly-editor {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  background-color: #eee;
+}
+
+.button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.GoogleDocs {
+  width: 800px;
+  height: 800px;
+}
+
+.mdl-button {
+  margin: 1em 0;
+  float: right;
+}
